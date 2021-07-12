@@ -53,7 +53,7 @@ class SplashSceen extends StatelessWidget {
                         fontWeight: FontWeight.w800
                       ),),
                     Text("NTO", style: TextStyle(
-                        color: Color(0xffFA700),
+                        color: Color(0xFFFDD835),
                         fontSize: 25,
                         fontWeight: FontWeight.w800
                     ),)
