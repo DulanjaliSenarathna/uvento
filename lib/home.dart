@@ -110,8 +110,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.white,
                     fontSize: 20,
                   ),),
+                  SizedBox(height: 16,),
                   Container(
-
+                    height: 100,
+                  child: ListView.builder(
+                      itemCount : events.length,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index){
+                        return EventTile(
+                          imgAssetPath: events[index].imgAssetPath,
+                          eventType: events[index].eventType,
+                        );
+                  }),
                   ),
                 ],
               ),
@@ -164,12 +175,18 @@ class EventTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xff29404E),
+      padding: EdgeInsets.symmetric(horizontal: 30),
+      margin: EdgeInsets.only(right: 16),
+      decoration: BoxDecoration(
+        color: Color(0xff29404E),
+        borderRadius: BorderRadius.circular(12),
+      ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image.asset("assets/concert.png",height: 40,),
-          SizedBox(height: 8,),
-          Text("Concert", style: TextStyle(
+          Image.asset(imgAssetPath,height: 27,),
+          SizedBox(height: 12,),
+          Text(eventType, style: TextStyle(
             color: Colors.white,
           ),),
         ],
