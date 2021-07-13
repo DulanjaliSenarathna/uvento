@@ -1,3 +1,3 @@
-class EventModel{
+class EventTypeModel{
   String imgAssetPath,eventType;
 }
