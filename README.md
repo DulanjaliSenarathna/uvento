@@ -1,6 +1,7 @@
 # uvento
+Flutter Event Management Mobile Application UI
 
-A new Flutter application.
+![evento](https://user-images.githubusercontent.com/59603716/126902048-be9e7488-d9b8-4e5c-ac3f-f7f5424178c7.png)
 
 ## Getting Started
 
